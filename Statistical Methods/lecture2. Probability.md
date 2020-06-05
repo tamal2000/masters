@@ -27,8 +27,13 @@ Probability in statistics:  `probability of observation.`
 **Three ways to calculate probability**
 1. Estimate `Relative Frequency`, P(A)= $\frac{Number of times A occurred}{Number of times procedure was repeated}$
 2. Classical (Theoretical) approach: Make probability model and compute P(A). Ex: Through coin three times: Sample space Ω has 2x2x2x = 8 outcomes; Ω = {HHH,HHT,HTH, THH,HTT, TTH, THT, TTT}
-3. Subjective Approach: Intuition/and or experience. 
+3. Subjective Approach: Intuition/and or experience. Example: Ajax made to semi-final last year. Probability of Ajax win this year is $\frac{1}{3}$
 
 **Example of RF:** A player attempted 644 free throws, he scored 577. Probability of he hits is $\frac{577}{644} \approx0.896.$
 
-**Theory of Large Numbers:** If a procedure is done again and again and outcomes are independent, then the RF of an event A is trends toward true P(A). 
+**Theory of Large Numbers:** If a procedure is done again and again and outcomes are independent, then the RF of an event A is trends toward true P(A).  
+
+**Counting Principle:** If experiment A has a>0 possible outcome and experiment B has b>0 outcome then experiment both have axb possible outcome.   
+*Example 1*: license plate has 3 digit and 3 number then total number of possible outcome is $26^3 x 10^3 = 17 567 000$.   
+*Example 2:* A vase with 3 red balls, 2 orange and 1 blue balls. Outcome space Ω = {red, orange, blue}, P(red) = $\frac{1}{2}$, P(orange) =$\frac{1}{3}$ P{blue} = $\frac{1}{6}$
+

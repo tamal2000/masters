@@ -1,6 +1,6 @@
 # Lecture 4
 
-## General Normal distribution 
+## General Normal distribution
 **z-score of value x:** Let x be a value of interest, related to a population distribution with mean  μ and standard deviation 𝜎. The z-score is,  <sub><img src="https://render.githubusercontent.com/render/math?math=z = \frac{x - \mu}{\sigma} "> </sub>
 
 ## The central limit theorem 
@@ -39,4 +39,7 @@ Independently draw a sample of size n > 30 from a population with mean μ and st
 
 ## Sampling distribution of sample mean and sample proportion 
 
+* **Sampling distribution** Let random variable $\overline{X}_n$ denote the sample means of a sample size n. The sampling distribution of the sample mean consists of all possible values values of $\overline{X}_n$, based on all possible samples of size n, and corresponding probabilities.  
+
+* **The central limit theorem (CLT):** Independently draw a sample of size n>30 from a population with mean μ and standard deviation 𝜎. Then $\overline{X}_n$ has approximately a N($\frac{\sigma}{\sqrt{n}}$).
 

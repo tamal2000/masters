@@ -37,12 +37,11 @@ P(A|B) = P(B|A).P(A)/P(B|A).P(A)+P(B|A_).P(A_)= .98 . 0.001/09 . 0.001 + 0.01 . 
 ### Law of Total Probability 
 P(B) = ∑ P(B ⋂ A)  = ∑ P(B|A<sub>i</sub>).P(A<sub>i</sub>)
 
-By applying 'Law of total probability` in `Bays' theorem` we get, 
-$P(A _r | B) = \frac{P(B|A_{r}) . P(A_{r})}{\sum P(B|A_{i}). P(A_{i}) }$
+By applying 'Law of total probability in `Bays' theorem` we get, 
 
-<img src="https://bit.ly/3cDhawz" align="center" border="0" alt="P(A _r | B) = \frac{P(B|A_{r}) . P(A_{r})}{\sum P(B|A_{i}). P(A_{i}) }" width="210" height="47" />   
 
-  
+<center><img src="https://render.githubusercontent.com/render/math?math=P(A _r | B) = \frac{P(B|A_{r}) . P(A_{r})}{\sum P(B|A_{i}). P(A_{i}) }"></center>
+
 
 ```{python}
 Example: Machine 1,2 and 3 produce 30%, 45% and 25% of all products. Respectively 2%, 3% and 2% there are defective. A randomly selected product is defective. what is the probability it came from machine 2. 
@@ -58,7 +57,7 @@ from bays' theorem,
 P(A2|B) = P(B|A2).P(A2)/ P(B|A1).P(A1) + P(B|A2).P(A2) + P(B|A3)P(A3) = 0.55 
 
 ```
-<img src="https://bit.ly/3cDhawz" align="center" border="0" alt="P(A _2 | B) = \frac{P(B|A_2) . P(A_{r})}{\sum P(B|A_{i}). P(A_{i}) }" width="210" height="47" /> 
+
 
 ## Probability Distribution 
 

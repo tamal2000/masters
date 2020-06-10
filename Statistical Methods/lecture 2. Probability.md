@@ -1,13 +1,7 @@
 # Lecture 2
 ## Probability Theory
 
-Questions on `Population`  
-```
-Probability of baby being 21 >= days early. (estimate this with relative frequency)  
-in sample of 300 births at least 6 of them were 21 days early.   
-So, the relative frequency is 6/300 = 0.02 = 2%
-```
-**Note** Sample should represent the population.   
+Sample should represent the population.   
 
 Probability in statistics:  `probability of observation.`  
 **Testing a claim** Is this coin unbiased?  
@@ -25,36 +19,47 @@ Probability in statistics:  `probability of observation.`
 * P(A) < 0.0005 (small): outcome A is `unlikely`.
   
 **Three ways to calculate probability**
-1. Estimate `Relative Frequency`, P(A)= $\frac{Number of times A occurred}{Number of times procedure was repeated}$
-2. Classical (Theoretical) approach: Make probability model and compute P(A). Ex: Through coin three times: Sample space Ω has 2x2x2x = 8 outcomes; Ω = {HHH,HHT,HTH, THH,HTT, TTH, THT, TTT}
-3. Subjective Approach: Intuition/and or experience. Example: Ajax made to semi-final last year. Probability of Ajax win this year is $\frac{1}{3}$
+1. **Estimate `Relative Frequency`**, P(A)= (Number of times A occurred)/(Number of times procedure was repeated)
+2. **Classical (Theoretical) approach:** Make probability model and compute P(A). Ex: Through coin three times: Sample space Ω has 2x2x2x = 8 outcomes; Ω = {HHH,HHT,HTH, THH,HTT, TTH, THT, TTT}
+3. **Subjective Approach:** Intuition/and or experience. Example: Ajax made to semi-final last year. Probability of Ajax win this year is $\frac{1}{3}$
 
-**Example of RF:** A player attempted 644 free throws, he scored 577. Probability of he hits is $\frac{577}{644} \approx0.896.$
+```
+Example (Relative frequency): A player attempted 644 free throws, he scored 577. Probability of he hits is 577/644 ≈ 0.896
+```
 
-**Theory of Large Numbers:** If a procedure is done again and again and outcomes are independent, then the RF of an event A is trends toward true P(A).  
+```
+Example(Classical approach): Throw a fair coin 3 times. what is the probability of 1 time Heads?
+Sample space Ω = {HHH,HHT,HTH,THH, HTT,THT,TTH,TTT} 2x2x2 = 8 
+Event, A {1H} = {HTT,THT,TTH} = 3 
+So, P(A) = 3/8 = 0.375
+```
+
+**Theory of Large Numbers (LLN):** If a procedure is done again and again and outcomes are independent, then the relative frequency (RF) of an event A is trends toward true P(A).  
 
 **Counting Principle:** If experiment A has a>0 possible outcome and experiment B has b>0 outcome then experiment both have axb possible outcome.   
-*Example 1*: license plate has 3 digit and 3 number then total number of possible outcome is $26^3 x 10^3 = 17 567 000$.   
-*Example 2:* A vase with 3 red balls, 2 orange and 1 blue balls. Outcome space Ω = {red, orange, blue}, P(red) = $\frac{1}{2}$, P(orange) =$\frac{1}{3}$ P{blue} = $\frac{1}{6}$
-* General probability of finite/countable sample space Ω: 
-  + Outcome w ∈ Ω: P(w) ≥ 0, ∑<sub>w ∈ Ω</sub> = 1
-  + A probability of an event, P(A) = ∑<sub>w ∈ A</sub> P(w)
+* **Example 1**: license plate has 3 digit and 3 number then total number of possible outcome is 26<sup>3</sup> x 10<sup>3</sup> = 17 567 000.   
+
+**Recipe to find P(A)** 
   ```
   Step 1: Find the sample space Ω, 
   Step 2: Determine the probabilities: P(w) for all w in Ω, 
   Step 3: Determine the outcome belong to
-  Step 4: Compute, P(A) = `∑<sub>w ∈ A</sub> P(w)`
+  Step 4: Compute, P(A) = ∑P(w) 
   ```
+
+* **Example 2:** A vase with 3 red balls, 2 orange and 1 blue balls. Outcome space Ω = {red, orange, blue}, P(red) = $\frac{1}{2}$, P(orange) =$\frac{1}{3}$ P{blue} = $\frac{1}{6}$
+
+**Note:** General probability of finite/countable sample space Ω: 
+  + Outcome w ∈ Ω: P(w) ≥ 0, ∑<sub>w ∈ Ω</sub> = 1
+  + A probability of an event, P(A) = ∑<sub>w ∈ A</sub> P(w)
 ## Addition Rule: 
+A `compound event` is any event combining two or more siple events.  
+P (A or B) = P (in a single trial, event A occurs or event B occurs or they both occur)  
 Every outcome is count only once.  
-Two cards pies of cards are faced down, each pile has one spade and one hearts. The probability of picking a spade is:   
-**Count:** Sample Space Ω = {SS, SH, HS, HH} and then equally {a spade} = {SH, SH, SS}, hence a spade = $\frac{3}{4}$.  
-**Sub:**: P(a spade) = P(spade from pile 1) + P(spade from file 2) - P(spade twice) = $\frac{1}{2}+\frac{1}{2}-\frac{1}{4}= \frac{3}{4}$  
+
 ```
-P(A or B) = P(A) + P (B) - P(A and B)
 P(A ⋃ B) = P(A) + P(B) - P(A ⋂ B)
 ```
-**Notations**
   * **Union:** A ⋃ B = A or B
   * **Intersection** A ⋂ B = A and B
   ```
@@ -71,10 +76,10 @@ P(A ⋃ B) = P(A) + P(B) - P(A ⋂ B)
   ```
 
 **Disjoint:** A and B are disjoined if they excluded each other.  
-        P(A ⋃ B) = P(A) + P(B)  
-General addition rule for disjoint events: P(A<sub>1</sub> ⋃. . .⋃ A <sub>m</sub> ) = $\sum$ P(A<sub>i</sub>)
+        P(A ⋃ B) = P(A) + P(B)  , i.e. A ∩ B = ∅.  
+General addition rule for disjoint events: P(A<sub>1</sub> ⋃. . .⋃ A <sub>m</sub> ) = ∑ P(A<sub>i</sub>)
 ```
-Example 1: The probability of throwing a three or even number.
+Example 1: The probability of throwing a three or even number in a die.
 P(A ⋃ B) = P(A) + P(B)
          = 1/6 + 1/2 = 2/3
 Example 2: Rolling two fair dice, whats is the probability of "sum equals to 4, 8, 9"?
@@ -86,8 +91,9 @@ P(Sum is 9) = {(3,6),(6,3),(4,5),(5,4)}
 P(sum 4, 8 or 9) = P(A) + P(B) + P(C) 
                  = 3/36 + 5/36 + 4/36 = 1/3 
 ```
-**Compliment Rule**
-Compliment of A; outcomes which are not in A<sup>c</sup>. P(A<sup>c</sup>) = 1 - P(A)
+## Compliment Rule
+Compliment of A; outcomes which are not in **¬A**. **Note:** key word is `at least once` to identify compliment related questions. 
+**<center>P(¬A) = 1 - P(A)</center>**
 ```
 Example: Three fair coin tosses, what is the probability of at least one Heads?
 Sample space Ω = {HHH,HHT, HTH, THH, HTT, THT, TTH, TTT} = 2x2x2 = 8 
@@ -98,9 +104,9 @@ P(A compliment) = 1 - 1/8 = 1/8
 ```
 
 ## Conditional Probability
-P(B|A): conditional probability that B occurs given that A has occurred.   
-General formula: `P(B|A) = P(A ⋂ B) / P(A)`
-and, in general: `P(B|A)≠ P(A | B)`
+**P(B|A):** conditional probability that B occurs given that A has occurred.   
+**General formula:** `P(B|A) = P(A⋂B)/P(A)`
+and,in general: `P(B|A)≠ P(A|B)`
 ```
 Example 1: rolls die twice and first one is 3, the probability of sum equals to 8?
 Given first die is 3,  
@@ -130,7 +136,7 @@ P(first1). P(draw 2 | ball is draw) = 1/9.1/8 = 1/72
 Example 1: Vase with 9 balls,labeled 1 to 9. If we draw two with replacement, after each other, what is the probability of first (1) and then end is (2). 
 P(first 1, then 2) = P (A ⋂ B) = P(A). P(B | A) = 1/9 . 1/9 = 1/81
 ```
-### Independence
+## Independence
 Two events A and B are independent if P(A⋂B) = P(A) . P(B), Thus P(B) = P (B|A)
 
 ```
@@ -143,7 +149,7 @@ P(A ⋂ B ) = P {(1,6)} = 1/36
 here, P(A ⋂ B ) = P(A). P(B), so A and B are independent. 
 ```
 
-### Sampling Method:
+## Sampling Method:
 - sampling with replacement
 - sampling without replacement   
 

@@ -61,6 +61,8 @@ P(A2|B) = P(B|A2).P(A2)/ P(B|A1).P(A1) + P(B|A2).P(A2) + P(B|A3)P(A3) = 0.55
 
 ## Probability Distribution 
 
+A `Probability distributions` determines all probabilities of possible values of a random variable. Given by a table, formula or graph. 
+
 Outcomes 𝓌 in Ω and the probability measure P determine the probability distribution of X:
 <code>P(X = x) = P({w ∈ Ω: X(𝓌) = x})</code> 
 

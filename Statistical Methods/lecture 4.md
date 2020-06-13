@@ -4,7 +4,7 @@
 **z-score of value x:** Let x be a value of interest, related to a population distribution with mean  μ and standard deviation 𝜎. The z-score is,  <sub><img src="https://render.githubusercontent.com/render/math?math=z = \frac{x - \mu}{\sigma} "> </sub>
 
 ## The central limit theorem 
-Independently draw a sample of size n > 30 from a population with mean μ and standard deviation 𝜎, then $\overline{X}_n$ has approximately a $N(\mu, \frac{\sigma^2}{n})$. Hence standard deviation is $\frac{\sigma}{\sqrt{n}}$.
+Independently draw a sample of size n > 30 from a population with mean μ and standard deviation 𝜎, then <img src="https://render.githubusercontent.com/render/math?math=\overline{X}_n">  has approximately a <img src="https://render.githubusercontent.com/render/math?math=N(\mu, \frac{\sigma^2}{n})"> . Hence standard deviation is <img src="https://render.githubusercontent.com/render/math?math=\frac{\sigma}{\sqrt{n}}">.
 
 ## Assessing normality with QQ plot 
  

@@ -39,8 +39,8 @@ Independently draw a sample of size n > 30 from a population with mean μ and st
 
 ## Sampling distribution of sample mean and sample proportion 
 
-* **Sampling distribution** Let random variable $\overline{X}_n$ denote the sample means of a sample size n. The sampling distribution of the sample mean consists of all possible values values of $\overline{X}_n$, based on all possible samples of size n, and corresponding probabilities.  
+* **Sampling distribution** Let random variable <img src="https://render.githubusercontent.com/render/math?math=\overline{X}_n"> denote the sample means of a sample size n. The sampling distribution of the sample mean consists of all possible values values of <img src="https://render.githubusercontent.com/render/math?math=\overline{X}_n">, based on all possible samples of size n, and corresponding probabilities.  
 
-* **The central limit theorem (CLT):** Independently draw a sample of size n>30 from a population with mean μ and standard deviation 𝜎. Then $\overline{X}_n$ has approximately a $N(\mu, \frac{\sigma}{\sqrt{n}}$).
+* **The central limit theorem (CLT):** Independently draw a sample of size n>30 from a population with mean μ and standard deviation 𝜎. Then <img src="https://render.githubusercontent.com/render/math?math=\overline{X}_n">  has approximately a  <sub><img src="https://render.githubusercontent.com/render/math?math=N(\mu, \frac{\sigma}{\sqrt{n}})"></sub>.
 
 f you routinely copy and paste text and other items on your Mac and iOS devices, you will no doubt agree that Apple’s default clipboard features are extremely lacking. Both the iOS and OS X clipboards only allow you to save one clipping at a time. Each clipping you make gets overridden by a new one. As a writer, I rel

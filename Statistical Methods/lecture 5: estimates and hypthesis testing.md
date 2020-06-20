@@ -127,18 +127,18 @@ Test with sample size n and significance level α
 - **Requirement Check:** Two samples are independent, both samples sizes are larger than 30 and both come from a normal population. 
 
 **σ<sub>1</sub> = σ<sub>2</sub>**
-- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=T_d^{eq} = \frac{(\overline{X_1} - \overline{X_2}) - (\mu_1 - \mu_2)}{\sqrt{\frac{S_p^2}{n_1} plus \frac{S_p^2}{n_2}}}">
-- **Confidence interval:** <img src="https://render.githubusercontent.com/render/math?math=E = t_{(n_1+n_2-2,\alpha/2)} \sqrt{s^2_p/n_1 + s^2_p/n_2}">
+- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=T_d^{eq} = \frac{(\overline{X_1} - \overline{X_2}) - (\mu_1 - \mu_2)}{\sqrt{\frac{S_p^2}{n_1} %2B \frac{S_p^2}{n_2}}}">
+- **Confidence interval:** <img src="https://render.githubusercontent.com/render/math?math=E = t_{(n_1+n_2-2,\alpha/2)} \sqrt{s^2_p/n_1 %2B s^2_p/n_2}">
 - **Pooled sample variance:** 
 <img src="https://render.githubusercontent.com/render/math?math=S_p^2 = \frac{(n_1 - 1)S_1^2 + (n_2 -1)S_2^2}{n_1 + n_2 - 2}">
 - Under the null hypothesis T<sub>2</sub><sup>eq</sup> has a t-distribution with n1 + n2 − 2 degrees of freedom. 
 
 **σ<sub>1</sub> ≠ σ<sub>2</sub>**
 
-- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=T_d^{eq} = \frac{(\overline{X_1} - \overline{X_2}) - (\mu_1 - \mu_2)}{\sqrt{\frac{S_1^2}{n_1} plus \frac{S_2^2}{n_2}}}">
+- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=T_d^{eq} = \frac{(\overline{X_1} - \overline{X_2}) - (\mu_1 - \mu_2)}{\sqrt{\frac{S_1^2}{n_1} %2B \frac{S_2^2}{n_2}}}">
 
 - ~n degrees of freedom: n = min(n<sub>1</sub> -1 , n<sub>2</sub> - 1)
-- **Margin of Error:** <img src="https://render.githubusercontent.com/render/math?math=E = \sqrt{(s_1^2/n_1) plus (s_2^2/n_2)}">
+- **Margin of Error:** <img src="https://render.githubusercontent.com/render/math?math=E = \sqrt{(s_1^2/n_1) %2B (s_2^2/n_2)}">
 
 
 ## Two Proportions
@@ -149,9 +149,39 @@ Test with sample size n and significance level α
     -  p<sub>1</sub> > p<sub>2</sub>: `right tailed` test 
     -  p<sub>1</sub> ≠ p<sub>2</sub>: `two-tailed` test
 -  **Requirement Check:** both samples are independent, n<sub>1</sub> and n<sub>2</sub> is more than 30 and normally distributed and each sample sample have 5 success and failures.   
-- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=Z_p = \frac{\hat{P_1} - \hat{P_2}}{\sqrt{\overline{P}(1 = \overline{P})/n_1 plus \overline{P}(1-\overline{p})/n_2}} \approx N(0,1) under H_0">
-- **pooled sample proportion:** P<sub>1</sub> = X<sub>1</sub>/n<sub>1</sub>, P<sub>2</sub> = X<sub>2</sub>/n<sub>2</sub>. <img src="https://render.githubusercontent.com/render/math?math=\overline{P} = \frac{X_1 plus X_2}{n_1 plus n_2}">
-- **Margin of Error** <img src="https://render.githubusercontent.com/render/math?math=E = Z_{\alpha/2} \sqrt{\hat{P_1}(1-\hat{p_1})/n_1 plus \hat{P_2}(1-\hat{p_2})/n_2}">
+- **Test Statistic:** <img src="https://render.githubusercontent.com/render/math?math=Z_p = \frac{\hat{P_1} - \hat{P_2}}{\sqrt{\overline{P}(1 = \overline{P})/n_1 %2B \overline{P}(1-\overline{p})/n_2}} \approx N(0,1) under H_0">
+- **pooled sample proportion:** P<sub>1</sub> = X<sub>1</sub>/n<sub>1</sub>, P<sub>2</sub> = X<sub>2</sub>/n<sub>2</sub>. <img src="https://render.githubusercontent.com/render/math?math=\overline{P} = \frac{X_1 %2B X_2}{n_1 %2B n_2}">
+- **Margin of Error** <img src="https://render.githubusercontent.com/render/math?math=E = Z_{\alpha/2} \sqrt{\hat{P_1}(1-\hat{p_1})/n_1 %2B \hat{P_2}(1-\hat{p_2})/n_2}">
 - **(1 − α) Confidence interval for p1 − p2** [(pˆ1 −pˆ2)−E,(pˆ1 −pˆ2)+E]
 
-<img src="https://render.githubusercontent.com/render/math?math=a + b">
+
+## Linear Correlation
+**Question w.r.t. population:** is there a relationship between variables x and y?   
+**Experiment:** measure the two variables of n subjects.  
+
+Correlation and linear correlation between two variables V1 and V2
+- Higher V1 values usually associated with higher V2 values: `positive correlation`
+- Higher V1 values usually associated with lower V2 values: `negative correlation`
+
+**Linear correlation:** if correlated and plotted points follow some straight line.  
+
+### Population and sample linear correlation coefficient
+- The population linear correlation coefficient is denoted by, `ρ` 
+- The sample linear correlation coefficient is denoted by, `r`  
+  <img src="https://render.githubusercontent.com/render/math?math=r = \frac{1}{n - 1} \frac{\sum (x_i - \overline{x})(y_i - \overline{y})}{s_xs_y}">
+
+**Interpretation of r:** (−1 ≤ r ≤ 1)  
+- r = 1: perfect positive linear relationship; 
+- r > 0 : positive linear relationship;
+- r ≈ 0: no linear relationship
+- r < 0: negative linear relationship 
+- r = -1: perfect negative linear relationship
+
+**Hypothesis:** confidence interval for `ρ` or test H<sub>0</sub>: ρ = 0  
+**Requirement Check:** points approx on straight line and no outliers. outliers must be removed to avoid error.  
+**Test** H<sub>0</sub>:ρ = 0 vs. H<sub>1</sub>:ρ ≠ 0.  
+<img src="https://render.githubusercontent.com/render/math?math=T_p = \frac{R}{\sqrt{\frac{1-R^2}{n-2}}} \approx t_{n-2} under H_0">
+
+
+
+

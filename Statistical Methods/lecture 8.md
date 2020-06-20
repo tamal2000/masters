@@ -8,7 +8,7 @@ A measure of linear relationship is given by the sample linear correlation coeff
  Testing, H<sub>0</sub>: p = 0 vs H<sub>1</sub>: p ≠ 0. The test statistic is  <img src="https://render.githubusercontent.com/render/math?math=T_p = \frac{R}{\sqrt{\frac{1 - R^2}{n-2}}} \approx t_{n-2}, under H_0">
 
 
-## Regression 
+# Regression 
 **Simple Linear regression:** describe data with a straight line. The data points approximate a straight ine pattern described by  
 <center>y = ß<sub>0</sub> + ß<sub>1x</sub> + error<sub>i</sub>.</center>   
 Where error term is a random variable (measurement error)
@@ -27,21 +27,61 @@ if there is a liner model than y = b<sub>0</sub> + b<sub>1</sub>x
 ### When is the linear model appropriate?
 - linear equation y = b<sub>0</sub> + b<sub>1</sub>x is a reasonable fit (plot)
 - `Coefficient of determination` r<sup>2</sup> is large 
-  - r<sup>2</sup> = explained variable / total variation 
-  - 0 ≤ r<sup>2</sup> ≤ 1 and if r<sup>2</sup> is “large” (close to 1), then the linear model is appropriate.
+  - <img src="https://render.githubusercontent.com/render/math?math=r^2 = \frac{ExplainedVariation}{TotalVariation}">
+  - **0 ≤ r<sup>2</sup> ≤ 1 and if r<sup>2</sup> is “large”** (close to 1), then the linear model is appropriate.
 - Linear relationship is significant: test the claim β<sub>1</sub> = 0 against β<sub>1</sub>  ≠ 0.
 - Errors should be independent and normally distributed with mean 0 and fixed standard deviation.
 
 
-### Testing Linearity: H<sub>0</sub>: ß<sub>1</sub> = 0 vs. H<sub>1</sub>: ß<sub>1</sub> ≠ 0.
+#### Testing Linearity: H<sub>0</sub>: ß<sub>1</sub> = 0 vs. H<sub>1</sub>: ß<sub>1</sub> ≠ 0.
 
 <img src="https://render.githubusercontent.com/render/math?math=T_p = \frac{b_1 - \beta_1}{s_{b_1}} \approx t_{n-2}, under H_0">  
 
 - s<sub>b<sub>1</sub></sub> is the standard error, 
 
- <img src="https://render.githubusercontent.com/render/math?math=">
+#### Hypothesis 
+- **Population parameter:** the `slope coefficient` **ß<sub>1</sub>** of the linear regression model 
+- **Hypothesis** H<sub>0</sub>:**ß<sub>1</sub>** = 0 vs. H<sub>1</sub> : **ß<sub>1</sub>** ≠ 0,with significance level α=0.01.
+- **Data Requirement:** heck requirements using plots: QQ plot of residuals and a “residual plot”
+- **Test statistic and P-value or critical region:**  
+  <img src="https://render.githubusercontent.com/render/math?math=T_{\Beta} = \frac{b_1}{s_b_1} \approx t_{n-2} under H_0">
+- **Conclude:**
+  - **Residual:** residual<sub>i</sub> = y<sub>i</sub> - (b<sub>0</sub> + b<sub>1</sub>x<sub>i</sub>)
+
+# Goodness-of-Fit
+**Expected frequencies** Expected frequency Ei is the expected number of occurrences of category i in the sample. 
+
+**Hypotheses** 
+- H<sub>0</sub>: frequency counts agree with the claimed distribution.   E<sub>i</sub> = n • p<sub>i</sub>
+- H<sub>1</sub>: frequency counts do not agree with the claimed distribution. 
+**Test Statices** sum of squared and scaled differences. 
+<img src="https://render.githubusercontent.com/render/math?math=\sum \frac{(ObservedFrequency - ExpectedFrequency)^2}{Expected Frequency}">, <img src="https://render.githubusercontent.com/render/math?math=X^2 = \sum \frac{(O_i - E_i)^2}{E_i} \approx X_{k-1}^2 under H_0">  
+a `chi-square` distribution with k - 1 degrees of freedom. 
+**Conclude** H<sub>0</sub> is rejected for `large value` of the observed score X<sup>2</sup>
+- **Critical value method:** reject H<sub>0</sub> if X^2 >X<sup>2</sup><sub>k-1, α</sub>
+- **P-value method:** reject H<sub>0</sub> if P(X^2 ≥ x^2) < α 
+
+## Chi-square distribution
+- parameter: degrees of freedom (df) 
+- continuous
+- asymmetric: right-skewed
+- only positive values
+
+### Hypothesis testing
+**Step 0** Indicate population parameter: proportion of ex red, blue, orange  
+**Step 1** H<sub>0</sub>: p<sub>1</sub> = 0.13, p<sub>2</sub>: 0.14  
+**Step 2** collect data requirements  check  
+**Step 4** Testing: <img src="https://render.githubusercontent.com/render/math?math=X^2 = \sum \frac{(O_i - E_i)^2}{E_i} \approx X_{k-1}^2 under H_0">
+**Step 5** But H<sub>0</sub> is rejected for large scores of X<sup>2</sup>
 
 
+# Independence Test 
+
+
+
+
+
+<img src="https://render.githubusercontent.com/render/math?math=">
  #
  #
  #

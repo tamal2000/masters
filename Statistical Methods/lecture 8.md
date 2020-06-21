@@ -75,10 +75,36 @@ a `chi-square` distribution with k - 1 degrees of freedom.
 **Step 5** But H<sub>0</sub> is rejected for large scores of X<sup>2</sup>
 
 
+#### Contingency Table
+A `contingency table` is a table of frequency counts of categorical data corresponding to both variables. 
+- **Row Variable:** r categories 
+- **Column variable:** c categories 
+- in total, r x c cells/entires 
+- Example: 
+  |            | Left-Handed    |    Right Handed| Total   |
+  |------------|:--------------:|:--------------:|--------:|
+  |**Male**    |23              |217             |240      |
+  |**Female**  |65              |455             |520      |
+  |**Total**   |**88**          |**672**         |**760**  |
+  
+
 # Independence Test 
 
+Data presentation: a contingency table (or two-way table) is a table of frequency counts of categorical data corresponding to both variables.
 
+**Claim** Gender and left-handedness are dependent.  
+**Step 1** 
+- H<sub>0</sub>: row and column variable are independent 
+- H<sub>1</sub>: row and column variable are dependent 
+- significance level = 0.05.
+**Step 2** Data requirement check. 
+- sample size
+- 2 x 2 : all elements > 5
+- large table: All E> 1 and 80% of E > 5.  
+**Step 3**
+<img src="https://render.githubusercontent.com/render/math?math=X^2 = \sum \frac{(O - E)^2}{E} \approx X^2_{(r-1)(c-1)}">  
 
+**Step 4** **H<sub>0</sub>** is rejected for large value of **X<sup>2</sup>**. Compare with critical value X<sup>2</sup><sub>(r-1)(c-1)</sub> or find `P-value` P(X<sup>2</sup> > x<sup>2</sup>) in R. 
 
 
 <img src="https://render.githubusercontent.com/render/math?math=">

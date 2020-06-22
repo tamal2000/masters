@@ -48,7 +48,7 @@ Denoted by α. Small, usually 0.05, but also 0.01 or 0.1.
 **Testing errors**  
 Since hypothesis testing is based on data, randomness can cause errors.  
 - **Type I error:** mistake of rejecting H<sub>0</sub> when its true. Probability of type I error ≤ α
-- **Type II error:** mistake of not rejecting H<sub>0</sub> when its false. its probability: donted by ß. 
+- **Type II error:** mistake of not rejecting H<sub>0</sub> when its false. its probability: denoted by ß. 
 ## Proportion 
 **Null hypothesis:** **H<sub>0</sub>:** population parameter = hypothetical value  
 **Alternant Hypothesis:** **H<sub>1</sub>** Depending on the claim we choose one out of three.  

@@ -77,7 +77,7 @@ dpll_2(α, literal){
 ```
 
 #### Improvement
-- Branch immidiately on unit literals. If literal L does not appear negated in formula F, then setting
+- Branch  immidiately on unit literals. If literal L does not appear negated in formula F, then setting
 L true preserves satisfiability of F. 
 
 
@@ -86,7 +86,19 @@ L true preserves satisfiability of F.
 - DLCS (Dynamic Largest Combined Sum)
 - DLIS (Dynamic Largest Individual Sum)
 - JW Heuristic J(I)= ∑2<sup>-|w|</sup>
+    - One Sided JW: Select the literal with highest value of literals. 
+    - Two sided JW: Select the literal with gighest (j(x) + j(x'))
+- Mom Heuristic: Minimum occupance in clause of minimum size. 
 
+# Sudoku as Problem
+Many problems can be formulated as a `set of constraints on the solution`. These constraints can be stated in PL. 
+
+Finding the problem = finding satisfying truth assignment. 
+
+How to write the constraints in PL?  
+We need to describe `the world`.
+- One propositional variable 
+- and make a CNF
 
 
 

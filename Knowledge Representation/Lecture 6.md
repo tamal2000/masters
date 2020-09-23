@@ -39,7 +39,48 @@ Example of Ontology: Movie ontology
   - Tom cruise
   - Titanic 
 
-A talk for logic Engineering 
-- What logic do we need for UNSPC?
-- What logic do we need for Mesh?
-- What about GO?
+### What's inside on ontology?
+ Class + class hierarchy
+ instances 
+ slots/values
+ inheritance
+
+## Property Types
+- **Symetric Property:** If type(p, Symmertric Property)and p(x,y) then p (y,x). example IsMarriedTo. 
+- **Asymmetric Property** if type (p, Asymmetric) and p(x,y) then p(y,x) is inconsistent. 
+- **Transitive Property** If type (p, transitive) and p(x,y) and P(y,z) then P(x,z)
+- **Functional Property** if type (p, functional) and p(x,y) and p(x,z) and then y = z 
+- **Inverse Property** if type(p, inverse) and p(x,y) and p(z,y) then x = z
+- **Reflexive Property** if type (p, reflexive) then ∀x P(x,x). all sets are subset of its own subset
+- **Reflexive Property** if type (p, irreflexive) and p(x,x) then p(x,x) in inconsistent. 
+- **Inverse** InverseOf(p,q) then P(x,y then q(y,x). parentOf, childOf. 
+
+# Description Logic
+a family of knowledge representation formalisms that represent knowledge about an application domain as a hierarchy of concepts and a description of the properties of the objects.   
+
+- Concepts and roles
+- Complex expression: C U D, LC, ∀x.C, 
+- There are axioms and define terminology. C ⊆ D
+- There are axioms to assert statement about the world. such as C or P(a,b) -> called Abox
+- Semantics and Inference allows to calculate hierarchies and other important ontology requirements. 
+
+## ALC: Syntax
+The simplest description logic, small extention of propotional. 
+- concepts: logic, class, types
+- role name: propertyies 
+ALC - > Concept name and relation names. Complex concept descriptons are built from atomic terms by means of constructors: 
+* C | atomic Concept
+* ⊤ | universal concepts | thing
+* ⊥ | bottom concepts    | nothing
+* ¬C| complement         | not
+* C ⊓ D | intersection   | or
+* C ⊔ D | union          | and 
+* ∃r.C  | existenctial   | some
+* ∀r.C  | universal      | only 
+
+## Mathematical mean (interpretation)
+- Interpretation of a concept (class, type) C. C<sup>I</sup> all individuals X that belongs to C 
+Example: Human<sub>I</sub> = {paul, jane}. 
+- Interpretation of a role(property). P<sup>I</sup> = all paris of individuals (X,Y) such that X has property P with as value Y. Example: Love<sup>I</sup> = {(paul, jane),(jane, yellow_car)}
+- An interpretioan is a pair, I = (∆<sup>I<sup>, •<sup>I</sup>), where ∆<sup>I<sup> in a domain of individual (non-empty) and •<sup>I</sup> is an interpretation function. 
+  - A<sup>I</sup> ⊆ ∆<sup>I<sup>: concept names to subjects of ∆<sup>I<sup>. 

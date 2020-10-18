@@ -50,16 +50,16 @@ Example of Ontology: Movie ontology
 - **Asymmetric Property** if type (p, Asymmetric) and p(x,y) then p(y,x) is inconsistent. 
 - **Transitive Property** If type (p, transitive) and p(x,y) and P(y,z) then P(x,z)
 - **Functional Property** if type (p, functional) and p(x,y) and p(x,z) and then y = z 
-- **Inverse Property** if type(p, inverse) and p(x,y) and p(z,y) then x = z
+- **Inverse Functional Property** if type(p, inverse) and p(x,y) and p(z,y) then x = z
 - **Reflexive Property** if type (p, reflexive) then ∀x P(x,x). all sets are subset of its own subset
 - **Reflexive Property** if type (p, irreflexive) and p(x,x) then p(x,x) in inconsistent. 
-- **Inverse** InverseOf(p,q) then P(x,y then q(y,x). parentOf, childOf. 
+- **Inverse Property** InverseOf(p,q) then P(x,y then q(y,x). parentOf, childOf. 
 
 # Description Logic
 a family of knowledge representation formalisms that represent knowledge about an application domain as a hierarchy of concepts and a description of the properties of the objects.   
 
 - Concepts and roles
-- Complex expression: C U D, LC, ∀x.C, 
+- Complex expression: C U D, sC, ∀x.C, 
 - There are axioms and define terminology. C ⊆ D
 - There are axioms to assert statement about the world. such as C or P(a,b) -> called Abox
 - Semantics and Inference allows to calculate hierarchies and other important ontology requirements. 

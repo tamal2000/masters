@@ -102,7 +102,7 @@ Why is this important: perception works based on previous experiences, surroundi
     - relevant information passes the filter. 
   - **Deutsch & Deutsch**
     - Bottleneck occurs after stimulus-identification. 
-#### **Visual Attention: **
+#### **Visual Attention:**
 * Directing visual attention:
   * Spatial: selectively of location 
   * Feature based: based on features such as color, orientation of size.  

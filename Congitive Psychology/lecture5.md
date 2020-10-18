@@ -12,9 +12,9 @@ Types of Decision making
   - The decision maker knows with certainty the consequences of every alternative 
 - Decision making under risk
   - the decision maker knows the probability of the various outcomes 
-- Decision making under uncertainty: The scision maker doesnt know possible outcomes 
-  - patients presents to the ER with cehest pain
-    - patient history family history, age overwiet, smoking etc. 
+- Decision making under uncertainty: The decision maker dose not know possible outcomes 
+  - patients presents to the ER with chest pain
+    - patient history family history, age overweight, smoking etc. 
 
 Reasoning process:
 - Dual process theories. 

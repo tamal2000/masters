@@ -42,5 +42,3 @@ A `degree of belief` of `probability` in [0,1] world w: Pr(w).
 - nodes represent propositional variables 
 - edges represent direct causal influences 
 
-
-te

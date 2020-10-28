@@ -29,7 +29,8 @@
     |  | quiet | Confess|
     |--|:-----:|:------:|
     |quiet| -1, -1| -12, 0 | 
-    |Confess |0, -12 | -8, -8 | 
+    |Confess |0, -12 | -8, -8 |   
+    
     **Solution:** both confess 
 
 3. Penalty kicks 

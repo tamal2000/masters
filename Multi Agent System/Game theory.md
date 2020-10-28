@@ -21,12 +21,15 @@
 - coordinated actions in group 
 - Non-transferable utility: playoff of each player increases 
 - Transferable utility:  
-dd 
 
 # Example of Interesting Games 
 1. Children Dividing pie 
     Lets say there are three children. The first child cut the pie in three equal sizes. The second child decides the best to pieces and trim the best piece util he thinks the best two pieces are same. Now the last child decide which piece to take and rest follows. For the trimmed piece the same process will be done again. for three child the number of expected rotation is 3^3^3. Ref: https://arxiv.org/abs/1604.03655   
 2. Prisoner's dilemma 
+    | | quiet | Confess|
+    |quiet| -1, -1| -12, 0 | 
+    |Confess |0, -12 | -8, -8 | 
+    Solution: both confess 
 
 3. Penalty kicks 
 4. Ice cream time 

@@ -148,7 +148,7 @@ GANs are not very stable to train, but it provides results fast.
   - reward: r<sub>t</sub>
   - Trajectories, : full rollout of the agent interacting with the environment and receiving rewards. it starts with initial state s_0 to end state s_T
 - Simple Deep RL settings: 
-  - policy network, π<sub>θ</sub>(a|s)
+
   - episodic, online, model-free 
   - Gradient estimation focus. 
 - Markov decision process (MDP)
@@ -157,9 +157,5 @@ GANs are not very stable to train, but it provides results fast.
   - 𝛱 𝜋_𝜃(a_t|s_t): policy 
   - p(s_t+1, r_t+1 | s_t, a_t): State transition distribution  
 
-
-
-
-
-- Gradient of log probability of trajectory is equal to sum over all time steps of the log policy probability. 
+- G. adient of log probability of trajectory is equal to sum over all time steps of the log policy probability. 
 

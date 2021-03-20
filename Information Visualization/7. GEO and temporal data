@@ -1,0 +1,51 @@
+# GEO and Temporal Data
+
+## Dimensions of Temporal Visualization 
+- Frame of Reference
+    - Spatial: Growth map (ring map, color-season, size-number, color intensity-year)
+    - Abstract: Horizon Graph - time development over a number of data pints. 
+- Time Primitives
+    - Instant points:  Cycle plots 
+    - Intervals: Gantt-Chart
+- Arrangement 
+    - Linear: linegraph with dimention 
+    - Cyclic: Spatial plot 
+- Mapping 
+    - Static: trail plot  
+    - Dynamic: bubble chart animation 
+- Time Primitives:
+    - Ordered 
+    - Branching 
+    - Multiple perspective time 
+
+## Analyzing time series data 
+- Interaction: analysis task 
+- Temporal data abstraction: reduce quantitative variable to qualitative
+    - state
+    - Gradient
+    - Rate 
+- Clustering: group data and represent 
+- Event Detection: identify events 
+
+## Geophysical 
+- Mercator: most famous online map. 
+    - A cylindracal project 
+    - keeps angles and shapes 
+    - distors areas 
+- Albers: a conic project used by geological survery
+- Choropleth: fill region with color 
+- heatmaps on maps 
+- symbol map: choropleth + simple viz 
+
+## Spatiatemporal Visualization
+- showing Temporal and spartial data jointly
+- prone to clutter
+- solution: space-time cube 
+- **Tobler's first Law:** Everything's related to everything else, but near things are more related that distant things. 
+    - interpolation and extrapolation
+    - intergration of information 
+    - spatial and tempral interface 
+
+- Scale 
+- Smooth navigatioon : panning + zooming 
+

@@ -1,0 +1,45 @@
+## time series 
+- focus on: 
+	- Periodicity and trends 
+	- Forecasting 
+	- Control 
+- component decomposition: 
+	- period: daily, weekly, seasonality 
+	- trend: how the mean evolves over time 
+	- irregular variations: left after we remove the periodic variations and trend. 
+- Stationary: 
+	- Trends and period is moved 
+	- variance of the remaining residuals is constant 
+	- lambda = delay in time 
+	- autocorrelation between two points of lambda distance
+		- How far there is a correlation between a time series and a shifted version of itself 
+		- random time series: no lags, lambda = 0 
+		- some memory: initial lags only
+		- cumulative sum: non-stationary 
+- filter and smoothing 
+	- filter: for delta t, a filter taking q points in the future and past
+- Forecasting using ARIMA 
+	- one single feature, use historical value to predict/forecast the future 
+	- measurement at time point t is coming from a distribution P_t
+	-  expected mean E(P_t)
+	- auto-covariance; gamma(t1,t2) E[(p1-u(t1))(p2 - u(t2)]
+	- a mean is constance the serie is constance. 
+	- Auto egression: pt can be derives from previous distribution.  
+	- Moving average: noise we encounter
+	- how to make it stationary. 
+		- order d, what type of difference. 
+		- look at the correlation 
+		- goodness of fit 
+	- other parameter? 
+- Recurring Neural Networks 
+	- input layer - x1 to xt 
+	- network 
+	- output 
+	- back to network again. 
+	- unfold the nextwork - varient of network  
+- Echo state network 
+	- tackel training difficulty of RNN 
+	- reservoir of randomly collected neurons
+	- eccho state property - decay of the time influence 
+	 
+- Dynamic systems models 

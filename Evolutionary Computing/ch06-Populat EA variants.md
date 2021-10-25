@@ -1,6 +1,18 @@
 # Poplar Evolutionary Algorithm Variants 
 
-# Historical EA variants
+## Important points
+- There are several incarnations/ dialects/ variants of the genetic EA scheme
+- The classic variants are: GA, ES, EP, GP
+- Primary applications: 
+  - GA: discreate / combinatorial optimization
+  - ES: continuous optimization
+  - GP: machine learning, modeling
+- Methods and tricks invented in one branch can be often applied in other ones
+- Some techniques PSO, use non evolutionary metaphors,
+- Novel metaphore with bombastic names - these may be equivalent to existing variants 
+- The specific type of EA in ot important for pllication 
+
+## Historical EA variants
 - Genetic Algorithms (GA): 1960 USA, discrete function optimization, binary representation, not too fast, often modelled by theorists
   - also known as simple genetic algorithm: representations, mutations, crossovers, selection mechanisms, representation is too restrictive, mutation and crossover opertors only applicable for bit-string and integer representations. 
   - Good for combinatoria optimisation, constrain satisfcation, many different varients, large academic fanbase
@@ -30,3 +42,6 @@
   - survivor selection: generational scheme 
   - initialisation: maximum initial depth for trees Dmax is set
   - Bloat = survival fo the fattest, the tree sizes in the population are increasing over time 
+
+
+
